@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      My Pokedex
+      <h1>My Pokedex</h1>
     </div>
   );
 }

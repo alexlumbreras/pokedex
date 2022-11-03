@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders react app', () => {
   render(<App />);
-  const title = screen.getByText(/my pokedex/i);
-  expect(title).toBeInTheDocument();
+  const header = screen.getByText(/my pokedex/i);
+  expect(header).toBeInTheDocument();
 });
