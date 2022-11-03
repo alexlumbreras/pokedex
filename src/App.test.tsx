@@ -7,3 +7,4 @@ test('renders react app', () => {
   const header = screen.getByText(/my pokedex/i);
   expect(header).toBeInTheDocument();
 });
+
