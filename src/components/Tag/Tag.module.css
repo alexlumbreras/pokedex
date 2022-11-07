@@ -1,7 +1,7 @@
 .tagWrapper {
     display: inline-block;
 
-    padding: 2px 8px ;
+    padding: 2px var(--spacing-tiny) ;
     border-radius: var(--radius-s);
 
     color: var(--white);
