@@ -2,6 +2,6 @@ import React from "react";
 
 export const Tag = () => {
   return(
-    <p></p>
+    <p>Creación el componente TAG</p>
   )
 }
