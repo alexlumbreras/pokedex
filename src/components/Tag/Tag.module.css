@@ -1,0 +1,11 @@
+.tagWrapper {
+    display: inline-block;
+
+    padding: 2px 8px ;
+    border-radius: var(--radius-s);
+
+    color: var(--white);
+    font-size: var(--text-size-xs);
+    line-height: var(--text-height-xs);
+    font-weight: var(--font-weight-bold);
+  }
