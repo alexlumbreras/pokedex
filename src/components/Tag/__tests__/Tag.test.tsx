@@ -3,7 +3,9 @@ import { screen, render } from "@testing-library/react";
 import { Tag } from "../Tag";
 
 test('Tag component is renderized', () => {
-    render(<Tag />);
-    const text = screen.getByText(/Creación el componente tag/i)
-    expect(text).toBeInTheDocument();
+    render(<Tag color="grass">Grass</Tag>);
+
+    const tagText = screen.getByText(/grass/i);
+
+    expect(tagText).toBeInTheDocument();
 })
