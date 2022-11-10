@@ -5,6 +5,8 @@
     border-radius: var(--radius-l);
 
     color: var(--white);
+
+    text-transform: capitalize;
     font-size: var(--text-size-xs);
     line-height: var(--text-height-xs);
     font-weight: var(--font-weight-bold);

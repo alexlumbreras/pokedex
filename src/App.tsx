@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>My Pokedex</h1>
-      <Tag color='grass'>Grass</Tag>
+      <Tag color='grass'>grass</Tag>
     </div>
   );
 }
