@@ -1,19 +1,20 @@
 import React from "react";
-import styles from './Tag.module.css';
+import styles from "./Tag.module.css";
 
 type TagProps = {
-  color:string;
-  children:string;
+  color: string;
+  children: string;
 };
 
 export const Tag: React.FC<TagProps> = ({ color, children }) => {
-  return(
+  return (
     <span
-      className= {styles.tagWrapper}
-      style = {{
+      className={styles.tagWrapper}
+      style={{
         backgroundColor: `var(--type-${color})`,
-      }} >
-        {children}
+      }}
+    >
+      {children}
     </span>
   );
 };

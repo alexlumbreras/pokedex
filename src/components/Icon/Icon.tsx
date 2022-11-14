@@ -1,5 +1,3 @@
-import { Pokeball } from "./icons/Pokeball";
-
 type Props = {
   icon: React.FC<{
     color: string;

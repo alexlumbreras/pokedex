@@ -2,14 +2,16 @@ import React from "react";
 import { Icon } from "./components/Icon/Icon";
 import { Tag } from "./components/Tag";
 import { Pokeball } from "./components/Icon/icons/Pokeball";
+import { SearchIcon } from "./components/Icon/icons/SearchIcon";
 
 function App() {
   return (
-    <div className="App">
+    <main>
       <h1>My Pokedex</h1>
       <Tag color="grass">grass</Tag>
       <Icon icon={Pokeball} />
-    </div>
+      <Icon icon={SearchIcon} />
+    </main>
   );
 }
 
