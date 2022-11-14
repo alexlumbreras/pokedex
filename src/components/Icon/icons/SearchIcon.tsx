@@ -5,6 +5,7 @@ type IconProps = {
 export const SearchIcon: React.FC<IconProps> = ({ color }) => {
   return (
     <svg
+      name="search-icon"
       role="img"
       width="16"
       height="16"
