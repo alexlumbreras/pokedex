@@ -1,11 +1,13 @@
-import React from 'react';
-import { Tag } from './components/Tag';
+import React from "react";
+import { Icon } from "./components/Icon/Icon";
+import { Tag } from "./components/Tag";
 
 function App() {
   return (
     <div className="App">
       <h1>My Pokedex</h1>
-      <Tag color='grass'>grass</Tag>
+      <Tag color="grass">grass</Tag>
+      <Icon />
     </div>
   );
 }
