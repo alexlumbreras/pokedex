@@ -63,6 +63,7 @@
   display: flex;
   justify-content: center;
   margin: var(--spacing-xtiny) 0 0;
+  gap: var(--spacing-mini);
 }
 
 .about {

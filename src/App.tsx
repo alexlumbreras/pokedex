@@ -10,7 +10,7 @@ function App() {
     index: 1,
     name: "Bulbasur",
     imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
-    types: ["grass"],
+    types: ["grass", "poison"],
     weight: 6.9,
     height: 0.7,
     description:
