@@ -38,11 +38,11 @@ describe("PokeCard tests", () => {
     expect(heightIcon).toBeInTheDocument();
   });
 
-  test("Render Pokemon name", () => {
+  test("Render Pokemon name and measure data.", () => {
     render(<PokemonCard {...CardProps} />);
 
-    expect(screen.getByText("Bulbasur")).toBeInTheDocument();
-    expect(screen.getByText("6.9 kg")).toBeInTheDocument();
-    expect(screen.getByText("0.7 m")).toBeInTheDocument();
+    expect(screen.getByText(/bulbasur/i)).toBeInTheDocument();
+    expect(screen.getByText(/6\.9 kg/i)).toBeInTheDocument();
+    expect(screen.getByText(/0\.7 m/i)).toBeInTheDocument();
   });
 });
