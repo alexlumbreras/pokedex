@@ -38,9 +38,10 @@ describe("PokeCard tests", () => {
     expect(heightIcon).toBeInTheDocument();
   });
 
-  test("Render Pokemon name and measure data.", () => {
+  test("Render Pokemon index, name and measure data.", () => {
     render(<PokemonCard {...CardProps} />);
 
+    expect(screen.getByText(/#001/i)).toBeInTheDocument();
     expect(screen.getByText(/bulbasur/i)).toBeInTheDocument();
     expect(screen.getByText(/6\.9 kg/i)).toBeInTheDocument();
     expect(screen.getByText(/0\.7 m/i)).toBeInTheDocument();
