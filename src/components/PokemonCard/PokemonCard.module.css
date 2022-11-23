@@ -65,6 +65,14 @@
   margin: var(--spacing-xtiny) 0 0;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  font-size: var(--text-size-s);
+  line-height: var(--text-height-xs);
+  font-weight: var(--font-weight-bold);
+}
+
 .measures {
   display: flex;
   justify-content: center;
@@ -73,6 +81,8 @@
 .measure {
   padding: 0 var(--spacing-base);
   text-align: center;
+  display: grid;
+  gap: var(--spacing-tiny);
 }
 
 .measure:not(:last-child) {
@@ -81,8 +91,8 @@
 
 .measureData {
   display: flex;
-  gap: var(--spacing-xtiny);
-  font-size: var(--text-size-xs);
+  gap: var(--spacing-tiny);
+  font-size: var(--text-size-s);
   line-height: var(--text-height-xs);
 }
 
@@ -91,10 +101,12 @@
   line-height: var(--text-height-xs);
 
   margin-top: var(--spaces-xs);
-  color: var(--base-color-a);
+  color: var(--medium-gray);
 }
 
 .description {
   font-size: var(--text-size-xs);
   line-height: var(--text-height-xs);
+  text-align: justify;
+  color: var(--dark-gray);
 }
