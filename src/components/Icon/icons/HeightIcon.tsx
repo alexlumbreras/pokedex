@@ -5,6 +5,7 @@ type IconProps = {
 export const HeightIcon: React.FC<IconProps> = ({ color }) => {
   return (
     <svg
+      name="height-icon"
       role="img"
       width="8"
       height="16"
