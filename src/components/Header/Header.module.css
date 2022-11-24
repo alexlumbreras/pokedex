@@ -1,12 +1,18 @@
 .headerWrapper {
-  width: 100%;
+  padding: var(--spacing-base);
+  max-width: var(--layout);
+
+  box-shadow: var(--shadow);
   background-color: var(--white);
 }
 
 .header {
   display: flex;
-  padding: var(--spacing-base) 12.6rem;
+  align-items: center;
+
   gap: var(--spacing-mini);
+
+  margin: auto;
 }
 
 .title {
