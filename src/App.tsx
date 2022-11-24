@@ -15,10 +15,12 @@ function App() {
   };
 
   return (
-    <main>
+    <>
       <Header />
-      <PokemonCard {...cardData}></PokemonCard>
-    </main>
+      <main>
+        <PokemonCard {...cardData}></PokemonCard>
+      </main>
+    </>
   );
 }
 
