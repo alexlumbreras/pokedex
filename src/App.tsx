@@ -1,6 +1,7 @@
 import React from "react";
 import { PokemonCard } from "components/PokemonCard";
 import { Header } from "components/Header/Header";
+import { SearchBar } from "components/SearchBar/SearchBar";
 
 function App() {
   const cardData = {
@@ -18,6 +19,7 @@ function App() {
     <>
       <Header />
       <main>
+        <SearchBar />
         <PokemonCard {...cardData}></PokemonCard>
       </main>
     </>

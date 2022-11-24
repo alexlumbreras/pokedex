@@ -1,0 +1,15 @@
+.searcherWrapper {
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-m);
+  margin: 12px;
+  background-color: var(--white);
+  max-width: 50.1rem;
+  padding: var(--spacing-tiny);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xtiny);
+}
+
+.searcher {
+  border: none;
+}
