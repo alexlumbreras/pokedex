@@ -11,5 +11,6 @@
 }
 
 .searcher {
+  flex-grow: 1;
   border: none;
 }
