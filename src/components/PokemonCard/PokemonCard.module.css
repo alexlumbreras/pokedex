@@ -3,7 +3,7 @@
   grid-template-rows: min-content 240px;
   align-content: space-between;
 
-  max-width: 300px;
+  max-width: 360px;
   height: 400px;
 
   padding: var(--spacing-xtiny);
@@ -37,10 +37,6 @@
 }
 
 .content {
-  height: 240px;
-
-  position: relative;
-
   padding: var(--spacing-tiny) var(--spacing-small);
   background-color: var(--white);
   border-radius: var(--radius-l);
