@@ -1,5 +1,6 @@
 import React from "react";
 import { PokemonCard } from "components/PokemonCard";
+import { Header } from "components/Header/Header";
 
 function App() {
   const cardData = {
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <main>
-      <h1>My Pokedex</h1>
+      <Header />
       <PokemonCard {...cardData}></PokemonCard>
     </main>
   );

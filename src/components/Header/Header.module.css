@@ -1,0 +1,16 @@
+.headerWrapper {
+  width: 100%;
+  background-color: var(--white);
+}
+
+.header {
+  display: flex;
+  padding: var(--spacing-base) 12.6rem;
+  gap: var(--spacing-mini);
+}
+
+.title {
+  font-size: var(--heading-size-m);
+  line-height: var(--heading-height-m);
+  font-weight: var(--font-weight-bold);
+}
