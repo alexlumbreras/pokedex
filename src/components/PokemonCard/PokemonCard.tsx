@@ -24,8 +24,6 @@ export const PokemonCard: React.FC<CardProps> = ({
 }) => {
   const formattedIndex = `#${index.toString().padStart(3, "0")}`;
 
-  types.map((type) => console.log(type));
-
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.header}>
