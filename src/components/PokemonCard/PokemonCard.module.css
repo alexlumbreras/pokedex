@@ -30,8 +30,6 @@
 }
 
 .index {
-  line-height: var(--heading-height-m);
-
   color: var(--white);
   font-weight: var(--font-weight-bold);
 }
