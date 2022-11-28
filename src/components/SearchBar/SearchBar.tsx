@@ -20,16 +20,20 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className={styles.searcherWrapper}>
+    <label htmlFor="searchbar" className={styles.searcherWrapper}>
       <img src={SearchIcon} alt="Search-Icon" />
       <input
+        aria-label="searchbar"
+        autoComplete="off"
+        data-testid="searchbar"
         className={styles.searcher}
-        type="text"
+        name="searchbar"
+        type="search"
         placeholder="Busca un Pokemon"
         value={inputValue}
         onChange={handleChange}
         onKeyDown={handleEnter}
       ></input>
-    </div>
+    </label>
   );
 };
