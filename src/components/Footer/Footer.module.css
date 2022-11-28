@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: var(--spacing-small);
+  border-top: 1px solid var(--light-gray);
 }
 
 .image:last-child {
