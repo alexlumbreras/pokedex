@@ -9,6 +9,6 @@
   border-top: 1px solid var(--light-gray);
 }
 
-.image:last-child {
+.logo:last-child {
   border-left: 1px solid var(--light-gray);
 }

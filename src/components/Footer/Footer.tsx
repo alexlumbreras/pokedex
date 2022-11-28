@@ -4,7 +4,7 @@ import PokeApiLogo from "../../assets/images/pokeapi-logo.svg";
 
 export const Footer = () => (
   <div className={styles.footerWrapper}>
-    <img className={styles.image} src={GitHubLogo} alt="Github Logo" />
-    <img className={styles.image} src={PokeApiLogo} alt="PokeApi Logo" />
+    <img className={styles.logo} src={GitHubLogo} alt="Github Logo" />
+    <img className={styles.logo} src={PokeApiLogo} alt="PokeApi Logo" />
   </div>
 );
