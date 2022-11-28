@@ -15,11 +15,15 @@ function App() {
       "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
   };
 
+  const handleSearch = (searchValue: string) => {
+    console.log(searchValue);
+  };
+
   return (
     <>
       <Header />
       <main>
-        <SearchBar />
+        <SearchBar onSearch={handleSearch} />
         <PokemonCard {...cardData}></PokemonCard>
       </main>
     </>

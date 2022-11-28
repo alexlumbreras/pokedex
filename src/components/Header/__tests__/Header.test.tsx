@@ -7,7 +7,7 @@ describe("Header", () => {
 
     const headerTitle = screen.getByRole("heading", {
       level: 1,
-      name: /my pokedex/i,
+      name: /my pokédex/i,
     });
 
     expect(headerTitle).toBeInTheDocument();

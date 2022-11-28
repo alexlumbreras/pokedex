@@ -1,12 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders react app', () => {
+test("renders react app", () => {
   render(<App />);
 
-  const heading = screen.getByRole('heading', { level: 1, name: /my pokedex/i });
-  
+  const heading = screen.getByRole("heading", {
+    level: 1,
+    name: /my pokédex/i,
+  });
+
   expect(heading).toBeInTheDocument();
 });
-
