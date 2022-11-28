@@ -1,0 +1,13 @@
+.footerWrapper {
+  width: 100%;
+  background-color: var(--white);
+  padding: var(--spacing-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
+.image:last-child {
+  border-left: 1px solid var(--light-gray);
+}
