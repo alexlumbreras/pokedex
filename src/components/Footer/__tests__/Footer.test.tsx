@@ -5,10 +5,10 @@ describe("Footer", () => {
   test("Reder Footer component", () => {
     render(<Footer />);
 
-    const footerGitImage = screen.getByAltText("Github Logo");
-    const footerApiImage = screen.getByAltText("PokeApi Logo");
+    const githubLogo = screen.getByAltText("Github Logo");
+    const pokeapiLogo = screen.getByAltText("PokeApi Logo");
 
-    expect(footerGitImage).toBeInTheDocument();
-    expect(footerApiImage).toBeInTheDocument();
+    expect(githubLogo).toBeInTheDocument();
+    expect(pokeapiLogo).toBeInTheDocument();
   });
 });
