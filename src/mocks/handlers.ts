@@ -1,11 +1,11 @@
 import { rest } from "msw";
-import bulbasur from "./data/bulbasur.json";
+import bulbasur from "./data/bulbasaur.json";
 
 export const handlers = [
   rest.get("https://pokeapi.co/api/v2/pokemon/:name", (req, res, ctx) => {
     const { name } = req.params;
 
-    if (name == "bulbasur") {
+    if (name == "bulbasaur") {
       return res(ctx.status(200), ctx.json(bulbasur));
     }
 
