@@ -3,7 +3,7 @@
   grid-template-rows: min-content 240px;
   align-content: space-between;
 
-  max-width: 360px;
+  max-width: 300px;
   height: 400px;
 
   padding: var(--spacing-xtiny);

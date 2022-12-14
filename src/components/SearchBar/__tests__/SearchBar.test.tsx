@@ -14,7 +14,7 @@ describe("Searchbar", () => {
 
     expect(searchInput).toBeInTheDocument();
     expect(searchIcon).toBeInTheDocument();
-    expect(placeholder).toBe("Busca un Pokemon");
+    expect(placeholder).toBe("Search a Pokemon...");
     // expect(placeholder).toBeInTheDocument();
   });
 

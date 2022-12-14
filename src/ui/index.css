@@ -100,7 +100,7 @@ p,
 strong,
 input {
   font-size: var(--text-size-m);
-  line-height: var(--text-height-m);
+  line-height: var(--text-height-l);
   margin: 0;
 }
 

@@ -16,6 +16,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const handleEnter = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       onSearch(inputValue);
+      setInputValue("")
     }
   };
 
@@ -24,12 +25,12 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       <img src={SearchIcon} alt="Search-Icon" />
       <input
         aria-label="searchbar"
-        autoComplete="off"
         data-testid="searchbar"
         className={styles.searcher}
         name="searchbar"
         type="search"
-        placeholder="Busca un Pokemon"
+        placeholder="Search a Pokemon..."
+        autoComplete="off"
         value={inputValue}
         onChange={handleChange}
         onKeyDown={handleEnter}
