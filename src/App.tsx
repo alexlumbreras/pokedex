@@ -9,25 +9,44 @@ import styles from "./App.module.css"
 
 function App() {
 
-  const [pokemon, setPokemon] = useState<Pokemon>();
+  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [isFirstSearch, setIsFirstSearch] = useState<boolean>(true)
 
   const handleSearch = async (searchValue: string) => {
     setIsLoading(true)
     try {
-      const searchedPokemon = await pokemonService.getPokemon(searchValue)
-      setPokemon(searchedPokemon)
+      const searchedPokemon = await pokemonService.getPokemon(
+        searchValue.toLowerCase()
+      );
+      const newPokemons = [...pokemons, searchedPokemon];
+      setPokemons(newPokemons)
+      setIsFirstSearch(false)
+      console.log(pokemons) //Borrar
     } catch (error: unknown) {
-      setPokemon(undefined)
+      console.log("Error...")
     }
 
     setIsLoading(false)
   };
 
   const getPokemonContent = () => {
-    if (isLoading) return <p>Loading data...</p>
-    if (!pokemon) return <p>Start searching a pokemon!</p>
-    return <PokemonCard {...pokemon} />
+    if (isFirstSearch) return (
+      <p className= {styles.status}>Write a pokemon name to start!</p>
+    )
+    if (!pokemons) return (
+      <p className={styles.status}>
+        Oops, it seems you haven't made a good search... try again!
+      </p>
+    );
+    return (
+      <section className= {styles.grid}>
+        {pokemons.map((pokemon: Pokemon, index: number) => (
+          <PokemonCard key={`pokemon-card-${index}`}{...pokemon} />
+        ))}
+        {isLoading && <p>Loading...</p>}
+      </section>
+    );
   }
 
   return (
