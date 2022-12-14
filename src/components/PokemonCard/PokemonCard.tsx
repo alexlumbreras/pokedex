@@ -25,7 +25,10 @@ export const PokemonCard: React.FC<CardProps> = ({
   const formattedIndex = `#${index.toString().padStart(3, "0")}`;
 
   return (
-    <div className={styles.cardWrapper}>
+    <div className={styles.cardWrapper}
+      style={{
+      backgroundColor: `var(--type-${types[0]}`,
+    }}>
       <div className={styles.header}>
         <h4 className={styles.name}>{name}</h4>
         <p className={styles.index}>{formattedIndex}</p>

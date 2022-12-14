@@ -9,8 +9,6 @@
   padding: var(--spacing-xtiny);
   border-radius: var(--radius-l);
   box-shadow: var(--shadow);
-
-  background-color: var(--type-grass);
 }
 
 .header {
@@ -27,6 +25,8 @@
 
   color: var(--white);
   font-weight: var(--font-weight-bold);
+  
+  text-transform: capitalize;
 }
 
 .index {

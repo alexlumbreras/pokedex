@@ -22,7 +22,6 @@ function App() {
       const newPokemons = [...pokemons, searchedPokemon];
       setPokemons(newPokemons)
       setIsFirstSearch(false)
-      console.log(pokemons) //Borrar
     } catch (error: unknown) {
       console.log("Error...")
     }
