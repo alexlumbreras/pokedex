@@ -5,6 +5,7 @@ import { SearchBar } from "components/SearchBar/SearchBar";
 import { Footer } from "components/Footer/Footer";
 import { Pokemon } from "core/models/Pokemon";
 import { pokemonService } from "core/services/pokemonService";
+import styles from "./App.module.css"
 
 function App() {
 
@@ -30,13 +31,17 @@ function App() {
   }
 
   return (
-    <>
-      <Header />
-      <SearchBar onSearch={handleSearch}/>
-        <main>{getPokemonContent()}</main>
-      <Footer />
-    </>
+    <div className={styles.wrapper}>
+      <Header/>
+      <main className={styles.main}>
+        <section className={styles.searchWrapper}>
+          <SearchBar onSearch={handleSearch} />
+        </section>
+        {getPokemonContent()}
+      </main>
+      <Footer/>
+    </div>
   );
-}
+};
 
 export default App;

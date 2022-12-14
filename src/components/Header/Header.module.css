@@ -1,6 +1,6 @@
 .headerWrapper {
   padding: var(--spacing-base);
-  max-width: var(--layout);
+  width: 100%;
 
   box-shadow: var(--shadow);
   background-color: var(--white);

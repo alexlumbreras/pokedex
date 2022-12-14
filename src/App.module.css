@@ -1,0 +1,31 @@
+.wrapper {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--spacing-medium);
+}
+
+.main{
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--spacing-medium);
+
+  padding: 0 var(--spacing-base);
+  max-width: var(--layout);
+
+  margin: auto;
+}
+
+.searchWrapper {
+
+  position: sticky;
+  z-index: 1;
+  top: var(--spacing-medium);
+
+}
+
